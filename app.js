@@ -7,10 +7,13 @@ const userRouter = require('./routes/userRoutes');
 const app = express();
 
 // 1) MIDDLEWARE
-app.use(morgan('dev'));
+console.log(process.env.NODE_ENV);
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
 
-// This is REQUIRED to receive POST requests and for express / the server to "interpret" them.
 app.use(express.json());
+app.use(express.static(`${__dirname}/public`));
 
 // Custom Middleware. Run these prior to other code, especially response code (as this cuts off the middelware event loop).
 app.use((req, res, next) => {
