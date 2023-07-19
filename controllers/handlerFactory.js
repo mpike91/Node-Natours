@@ -76,6 +76,7 @@ exports.getAll = (Model) =>
       .sort()
       .limitFields()
       .paginate();
+    // const doc = await features.query.explain(); // This gives extra technical data in the response field on a request.
     const doc = await features.query;
 
     // SEND RESPONSE
