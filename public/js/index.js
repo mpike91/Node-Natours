@@ -36,11 +36,6 @@ if (userDataForm)
     form.append('email', document.getElementById('email').value);
     form.append('photo', document.getElementById('photo').files[0]);
     console.log(form);
-
-    updateSettings(form, 'data');
-    window.setTimeout(() => {
-      location.reload(true);
-    }, 1000);
   });
 
 if (userPasswordForm)
