@@ -7,12 +7,15 @@ The app itself emulates an outdoors trip booking company, where users can view t
 <p align="center">
   <img width="100%" src="/readme_imgs/overview.png" alt="Overview Page">
 </p>
+<br>
 <p align="center">
   <img width="100%" src="/readme_imgs/tour.png" alt="Tour page">
 </p>
+<br>
 <p align="center">
   <img width="100%" src="/readme_imgs/tourmap.png" alt="Tour page map">
 </p>
+<br>
 <p align="center">
   <img width="100%" src="/readme_imgs/account.png" alt="Account Page">
 </p>
